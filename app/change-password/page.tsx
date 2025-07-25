@@ -10,9 +10,10 @@ import { Input } from "@/components/ui/input"
 import { Label } from "@/components/ui/label"
 import { Card, CardContent, CardDescription, CardHeader, CardTitle } from "@/components/ui/card"
 import { useLanguage } from "@/components/language-provider"
-import { useSession } from "@/components/session-provider"
 import { useToast } from "@/hooks/use-toast"
+
 import { Lock, Loader2 } from "lucide-react"
+import { useSession } from "../context/SessionContext"
 
 export default function ChangePasswordPage() {
   const { t } = useLanguage()
