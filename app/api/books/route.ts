@@ -65,7 +65,6 @@ export async function POST(request: NextRequest) {
       )
     }
 
-    // Create book object
     const bookData = {
       seller: user._id,
       sellerName: user.fullName,

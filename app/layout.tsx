@@ -1,5 +1,4 @@
 
-// ❌ DO NOT add "use client" at the top
 import { Inter } from "next/font/google"
 import "./globals.css"
 import type { Metadata, Viewport } from "next"

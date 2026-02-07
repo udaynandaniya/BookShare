@@ -24,13 +24,11 @@ export async function PUT(request: NextRequest) {
       return NextResponse.json({ message: "User not found" }, { status: 404 })
     }
 
-    // Verify current password
     const isValidPassword = await bcrypt.compare(currentPassword, user.password)
     if (!isValidPassword) {
       return NextResponse.json({ message: "Current password is incorrect" }, { status: 400 })
     }
 
-    // Hash new password
     const salt = await bcrypt.genSalt(10)
     user.password = await bcrypt.hash(newPassword, salt)
     await user.save()

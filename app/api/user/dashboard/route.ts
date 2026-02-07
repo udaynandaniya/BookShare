@@ -30,13 +30,11 @@ export async function GET(request: NextRequest) {
         email?: string
         userId?: string
       }
-      // console.log("Token decoded:", { hasEmail: !!decoded.email, hasUserId: !!decoded.userId }) // Debug log
     } catch (jwtError) {
       console.error("JWT verification failed:", jwtError)
       return NextResponse.json({ error: "Invalid token" }, { status: 401 })
     }
 
-    // Find user by email (since your JWT stores email, not userId)
     let user
     if (decoded.email) {
       user = await User.findOne({ email: decoded.email })
@@ -49,14 +47,12 @@ export async function GET(request: NextRequest) {
       return NextResponse.json({ error: "User not found" }, { status: 404 })
     }
 
-    // Get user's own books
     const ownBooks = await Book.find({ seller: user._id })
       .populate("seller", "fullName mobile whatsappNumber location")
       .sort({ createdAt: -1 })
       .lean()
 
 
-    // Get search and filter parameters
     const { searchParams } = new URL(request.url)
     const search = searchParams.get("search") || ""
     const standard = searchParams.get("standard") || ""
@@ -66,12 +62,10 @@ export async function GET(request: NextRequest) {
     const minPrice = searchParams.get("minPrice")
     const maxPrice = searchParams.get("maxPrice")
 
-    // Build query for all books
     const query: any = {
       isActive: true,
     }
 
-    // For regular users, exclude their own books. For admins, show all books
     if (!user.isAdmin) {
       query.seller = { $ne: user._id }
     }
@@ -84,7 +78,6 @@ export async function GET(request: NextRequest) {
       ]
     }
 
-    // Fix standard filter - handle different formats
     if (standard && standard !== "all") {
       const standardValue = standard.includes("Standard") ? standard : `${standard} Standard`
       query.standard = { $regex: `^${standardValue.replace(/[.*+?^${}()|[\]\\]/g, "\\$&")}$`, $options: "i" }

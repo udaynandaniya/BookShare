@@ -4,12 +4,7 @@ export async function POST(request: NextRequest) {
   try {
     const body = await request.json()
 
-    // In a real application, you would save this to a database
-    // For now, we'll just log it and return success
-
-    // You could also send an email notification to admin here
-    // await sendEmailToAdmin(body)
-
+  
     return NextResponse.json({
       success: true,
       message: "Feature request submitted successfully",

@@ -14,22 +14,18 @@ export async function POST(request: NextRequest) {
 
     await connectDB()
 
-    // For now, let's use a simpler approach - convert to base64 and store directly
-    // This avoids GridFS complexity while still working
+   
     const uploadedImages = []
 
     for (const file of files) {
       try {
-        // console.log(`⬆️ Processing file: ${file.name}`)
-
-        // Convert file to base64
+       
         const bytes = await file.arrayBuffer()
         const buffer = Buffer.from(bytes)
         const base64 = `data:${file.type};base64,${buffer.toString("base64")}`
 
         uploadedImages.push(base64)
 
-        // console.log(`✅ File processed: ${file.name}`)
       } catch (error) {
         console.error(`❌ Error processing file ${file.name}:`, error)
       }
