@@ -31,7 +31,7 @@ export default function RefundPage() {
               </CardHeader>
               <CardContent className="text-yellow-200 space-y-4">
                 <p className="font-medium">
-                  NavneetHub is a FREE platform that connects buyers and sellers of used Navneet books. We do not
+                  BookShareApp is a FREE platform that connects buyers and sellers of used Navneet books. We do not
                   process payments, handle transactions, or charge any fees.
                 </p>
                 <p>
@@ -49,7 +49,7 @@ export default function RefundPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-gray-300 space-y-4">
-                <p>NavneetHub provides the following services at no cost:</p>
+                <p>BookShareApp provides the following services at no cost:</p>
                 <ul className="list-disc list-inside space-y-1 text-sm">
                   <li>Platform access for buying and selling books</li>
                   <li>Book listing and browsing features</li>
@@ -79,7 +79,7 @@ export default function RefundPage() {
                 <div>
                   <h4 className="text-white font-medium mb-2">Direct User Transactions</h4>
                   <p className="text-sm">
-                    All book purchases and payments are conducted directly between buyers and sellers. NavneetHub is not
+                    All book purchases and payments are conducted directly between buyers and sellers. BookShareApp is not
                     involved in these transactions.
                   </p>
                 </div>
@@ -226,7 +226,7 @@ export default function RefundPage() {
                     <strong className="text-white">Email:</strong> udaynandaniya5@gmail.com
                   </p>
                   <p>
-                    <strong className="text-white">Subject:</strong> NavneetHub Support Request
+                    <strong className="text-white">Subject:</strong> BookShareApp Support Request
                   </p>
                   <p>
                     <strong className="text-white">Response Time:</strong> Within 48 hours
@@ -243,7 +243,7 @@ export default function RefundPage() {
               <CardContent className="p-6">
                 <h4 className="text-purple-200 font-medium mb-2">Legal Disclaimer</h4>
                 <p className="text-purple-200 text-sm">
-                  This refund policy is part of our Terms of Service. NavneetHub operates as a free platform service and
+                  This refund policy is part of our Terms of Service. BookShareApp operates as a free platform service and
                   is not liable for transactions between users. Users engage in transactions at their own risk and are
                   advised to follow safety guidelines.
                 </p>

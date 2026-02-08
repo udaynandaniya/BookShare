@@ -1,4 +1,4 @@
-//C:\Users\UDAYN\Downloads\navneethub\components\header.tsx
+//C:\Users\UDAYN\Downloads\BookShareApp\components\header.tsx
 "use client";
 
 import { useState } from "react";
@@ -98,7 +98,7 @@ export function Header() {
           <Link href="/" className="flex items-center gap-3">
             <BookOpen className="h-10 w-10 text-purple-500" />
             <span className="text-3xl font-semibold tracking-tight text-white">
-              NavneetHub
+              BookShareApp
             </span>
           </Link>
 
@@ -276,7 +276,7 @@ transition-all duration-300"
                             : router.push(href);
                         }}
                         // className="group relative flex items-center gap-3 px-4 py-3 text-base md:text-lg font-semibold text-white rounded-xl border transition-all duration-300 ease-in-out backdrop-blur-md bg-gradient-to-r from-purple-600 to-purple-800 hover:from-purple-500 hover:to-purple-700 border-purple-700 hover:shadow-[0_4px_30px_rgba(128,90,213,0.4)] active:translate-y-[1px] before:absolute before:inset-0 before:rounded-xl before:border before:border-purple-400 before:animate-border-glow before:z-[-1]"
-                      
+
                         className={`group relative flex items-center gap-3 px-4 py-3
 text-base md:text-lg font-semibold text-white rounded-xl border
 transition-colors duration-200
@@ -284,7 +284,6 @@ hover:shadow-lg hover:shadow-purple-700/30
 active:scale-[0.97]
 focus-visible:ring-2 focus-visible:ring-purple-400
 overflow-hidden isolate`}
-
                       >
                         <Icon className="w-6 h-6" />
                         <span>{name}</span>

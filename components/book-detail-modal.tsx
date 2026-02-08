@@ -1,5 +1,5 @@
 
-//C:\Users\UDAYN\Downloads\navneethub\components\book-detail-modal.tsx
+//C:\Users\UDAYN\Downloads\BookShareApp\components\book-detail-modal.tsx
 "use client"
 
 import { useState } from "react"
@@ -69,7 +69,7 @@ export function BookDetailModal({ book, isOpen, onClose, currentUser }: BookDeta
     if (number) {
       const formatted = number.replace(/[^0-9]/g, "")
       const message = encodeURIComponent(
-        `Hi! I'm interested in your book "${book.title}" (${book.standard}) listed for ₹${book.price} on NavneetHub.`,
+        `Hi! I'm interested in your book "${book.title}" (${book.standard}) listed for ₹${book.price} on BookShareApp.`,
       )
       // Open WhatsApp with pre-filled message
       window.open(`https://wa.me/91${formatted}?text=${message}`, "_blank")
@@ -109,8 +109,8 @@ export function BookDetailModal({ book, isOpen, onClose, currentUser }: BookDeta
     const bookUrl = `${currentDomain}/book/${book._id}`
 
     const shareData = {
-      title: `${book.title} - NavneetHub`,
-      text: `Check out this ${book.standard} book for ₹${book.price} on NavneetHub! 📚
+      title: `${book.title} - BookShareApp`,
+      text: `Check out this ${book.standard} book for ₹${book.price} on BookShareApp! 📚
 
 Book: ${book.title}
 Standard: ${book.standard}

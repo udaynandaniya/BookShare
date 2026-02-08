@@ -221,7 +221,7 @@ export default function SafetyPage() {
                     <p className="text-purple-400 text-xl font-bold">1930</p>
                   </div>
                   <div className="bg-white/5 p-4 rounded-lg">
-                    <h4 className="text-white font-medium mb-2">NavneetHub Support</h4>
+                    <h4 className="text-white font-medium mb-2">BookShareApp Support</h4>
                     <p className="text-purple-400 text-xl font-bold">+91-XXXXXXXXXX</p>
                   </div>
                 </div>
@@ -236,7 +236,7 @@ export default function SafetyPage() {
                   <div>
                     <h4 className="text-yellow-200 font-medium mb-2">Important Disclaimer</h4>
                     <p className="text-yellow-200 text-sm">
-                      NavneetHub is a platform that connects buyers and sellers. We are not responsible for the quality
+                      BookShareApp is a platform that connects buyers and sellers. We are not responsible for the quality
                       of books, payment disputes, or any fraudulent activities. Users are advised to exercise caution
                       and follow safety guidelines. Always verify the authenticity of books and sellers before making
                       any transactions.

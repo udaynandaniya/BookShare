@@ -61,8 +61,8 @@ export function UserOwnPostCard({ book, onEdit, onDelete, onView }: UserOwnPostC
     const bookUrl = `${currentDomain}/book/${book._id}`
 
     const shareData = {
-      title: `${book.title} - NavneetHub`,
-      text: `Check out this ${book.standard} book for ₹${book.price} on NavneetHub! 📚
+      title: `${book.title} - BookShareApp`,
+      text: `Check out this ${book.standard} book for ₹${book.price} on BookShareApp! 📚
 
 Book: ${book.title}
 Standard: ${book.standard}

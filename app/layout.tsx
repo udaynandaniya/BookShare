@@ -9,7 +9,7 @@ import { Footer } from "@/components/footer"
 const inter = Inter({ subsets: ["latin"] })
 
 export const metadata: Metadata = {
-  title: "NavneetHub - Buy & Sell Used Navneet Books",
+  title: "BookShareApp - Buy & Sell Used Navneet Books",
   description: "Platform for students to buy and sell used Navneet books at affordable prices",
   generator: "v0.dev",
 }

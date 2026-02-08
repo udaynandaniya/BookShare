@@ -1,4 +1,4 @@
-//C:\Users\UDAYN\Downloads\navneethub\components\image-gallery.tsx
+//C:\Users\UDAYN\Downloads\BookShareApp\components\image-gallery.tsx
 "use client"
 
 import { useState } from "react"

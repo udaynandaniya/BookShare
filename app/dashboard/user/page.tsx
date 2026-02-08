@@ -1,4 +1,3 @@
-//C:\Users\UDAYN\Downloads\navneethub\app\dashboard\user\page.tsx
 "use client"
 
 import { useEffect, useState } from "react"

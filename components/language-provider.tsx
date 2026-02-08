@@ -79,7 +79,7 @@ const translations = {
     step3Desc: "Buyers contact you directly to purchase",
 
     // Why Choose
-    "whyChoose.title": "Why Choose NavneetHub?",
+    "whyChoose.title": "Why Choose BookShareApp?",
     "whyChoose.qualityTitle": "Quality Books",
     "whyChoose.qualityDesc": "Verified condition of all listed books",
     "whyChoose.standardsTitle": "All Standards",
@@ -125,18 +125,18 @@ const translations = {
     linkCopiedDesc: "Book link has been copied to clipboard",
 
     // Feedback
-    helpImprove: "Help Us Improve NavneetHub",
+    helpImprove: "Help Us Improve BookShareApp",
     feedbackOptions: "Your feedback is valuable to us. Choose how you'd like to help us improve:",
     "feedback.askTitle": "Ask Query",
-    "feedback.askDesc": "Have questions about NavneetHub? Need help with something?",
+    "feedback.askDesc": "Have questions about BookShareApp? Need help with something?",
     "feedback.askCta": "Contact Support →",
     "feedback.ideaTitle": "Share New Ideas",
-    "feedback.ideaDesc": "Have an idea to make NavneetHub better?",
+    "feedback.ideaDesc": "Have an idea to make BookShareApp better?",
     "feedback.ideaCta": "Submit Ideas →",
     "feedback.issueTitle": "Report Issue",
     "feedback.issueDesc": "Found a bug or facing problems?",
     "feedback.issueCta": "Report Problem →",
-  "feedback.sectionTitle": "Help Us Improve NavneetHub",
+  "feedback.sectionTitle": "Help Us Improve BookShareApp",
   "feedback.sectionSubtitle": "Your feedback is valuable to us. Choose how you'd like to help us improve:",
 
   //howItWorks section
@@ -157,11 +157,11 @@ const translations = {
 "feedback.sectionSubtitle": "Your feedback is valuable to us. Choose how you'd like to help us improve:",
 
 "feedback.askTitle": "Ask Query",
-"feedback.askDesc": "Have questions about NavneetHub? Need help with something?",
+"feedback.askDesc": "Have questions about BookShareApp? Need help with something?",
 "feedback.askCta": "Contact Support →",
 
 "feedback.ideaTitle": "Share New Ideas",
-"feedback.ideaDesc": "Have an idea to make NavneetHub better?",
+"feedback.ideaDesc": "Have an idea to make BookShareApp better?",
 "feedback.ideaCta": "Submit Ideas →",
 
 "feedback.issueTitle": "Report Issue",
@@ -169,7 +169,7 @@ const translations = {
 "feedback.issueCta": "Report Problem →",
 
 "feedback.feedbackTitle": "Give Feedback",
-"feedback.feedbackDesc": "Tell us what you love or want improved on NavneetHub.",
+"feedback.feedbackDesc": "Tell us what you love or want improved on BookShareApp.",
 "feedback.feedbackCta": "Send Feedback →",
 
 
@@ -326,13 +326,13 @@ const translations = {
     linkCopiedDesc: "લિંક ક્લિપબોર્ડમાં કૉપિ થઈ છે",
 
     // Feedback
-    helpImprove: "NavneetHub ને વધુ સારું બનાવવા માટે અમને મદદ કરો",
+    helpImprove: "BookShareApp ને વધુ સારું બનાવવા માટે અમને મદદ કરો",
     feedbackOptions: "તમારા પ્રતિસાદથી કેવી રીતે મદદ કરશો તે પસંદ કરો:",
     "feedback.askTitle": "પ્રશ્ન પૂછો",
-    "feedback.askDesc": "NavneetHub વિશે પ્રશ્નો છે? મદદ જોઈએ?",
+    "feedback.askDesc": "BookShareApp વિશે પ્રશ્નો છે? મદદ જોઈએ?",
     "feedback.askCta": "સંપર્ક કરો →",
     "feedback.ideaTitle": "નવા વિચારો શેર કરો",
-    "feedback.ideaDesc": "NavneetHub ને વધુ સારું બનાવવા માટે તમારા વિચારો શેર કરો",
+    "feedback.ideaDesc": "BookShareApp ને વધુ સારું બનાવવા માટે તમારા વિચારો શેર કરો",
     "feedback.ideaCta": "વિચાર મોકલો →",
     "feedback.issueTitle": "સમસ્યા જણાવો",
     "feedback.issueDesc": "બગ મળ્યો છે કે સમસ્યા આવી છે?",
@@ -362,11 +362,11 @@ const translations = {
 "feedback.sectionSubtitle": "તમારો પ્રતિસાદ અમારે માટે મૂલ્યવાન છે. અમને વધુ સારું બનાવવા માટે તમારી પસંદગી બતાવો",
 
 "feedback.askTitle": "પ્રશ્ન પૂછો",
-"feedback.askDesc": "NavneetHub વિશે પ્રશ્નો છે? મદદ જોઈએ?",
+"feedback.askDesc": "BookShareApp વિશે પ્રશ્નો છે? મદદ જોઈએ?",
 "feedback.askCta": "સંપર્ક કરો →",
 
 "feedback.ideaTitle": "નવા વિચારો શેર કરો",
-"feedback.ideaDesc": "NavneetHub ને વધુ સારું બનાવવાનો વિચાર છે?",
+"feedback.ideaDesc": "BookShareApp ને વધુ સારું બનાવવાનો વિચાર છે?",
 "feedback.ideaCta": "વિચાર મોકલો →",
 
 "feedback.issueTitle": "સમસ્યા જણાવો",

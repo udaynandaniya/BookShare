@@ -1,4 +1,4 @@
-//C:\Users\UDAYN\Downloads\navneethub\components\book-edit-card.tsx
+//C:\Users\UDAYN\Downloads\BookShareApp\components\book-edit-card.tsx
 
 "use client"
 
@@ -63,7 +63,7 @@ export function BookEditCard({ book, onEdit, onDelete, onView }: BookEditCardPro
 
   const handleShare = async () => {
     const shareData = {
-      title: `${book.title} - NavneetHub`,
+      title: `${book.title} - BookShareApp`,
       text: `Check out this ${book.standard} book for ₹${book.price}`,
       url: `${window.location.origin}/book/${book._id}`,
     }

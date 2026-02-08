@@ -65,7 +65,7 @@ export function BookCard({ book }: BookCardProps) {
 
     const formatted = number.replace(/[^0-9]/g, "")
     const message = encodeURIComponent(
-      `Hi! I'm interested in your book "${book.title}" (${book.standard}) listed for ₹${book.price} on NavneetHub.`,
+      `Hi! I'm interested in your book "${book.title}" (${book.standard}) listed for ₹${book.price} on BookShareApp.`,
     )
     window.open(`https://wa.me/91${formatted}?text=${message}`, "_blank")
   }
@@ -116,8 +116,8 @@ export function BookCard({ book }: BookCardProps) {
     const bookUrl = `${currentDomain}/books/${book._id}`
 
     const shareData = {
-      title: `${book.title} - NavneetHub`,
-      text: `Check out this ${book.standard} book for ₹${book.price} on NavneetHub! 📚
+      title: `${book.title} - BookShareApp`,
+      text: `Check out this ${book.standard} book for ₹${book.price} on BookShareApp! 📚
 
 Book: ${book.title}
 Standard: ${book.standard}

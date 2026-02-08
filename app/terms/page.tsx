@@ -28,8 +28,8 @@ export default function TermsPage() {
               </CardHeader>
               <CardContent className="text-gray-300 space-y-4">
                 <p>
-                  Welcome to NavneetHub! These Terms of Service ("Terms") govern your use of our platform for buying and
-                  selling used Navneet books. By accessing or using NavneetHub, you agree to be bound by these Terms.
+                  Welcome to BookShareApp! These Terms of Service ("Terms") govern your use of our platform for buying and
+                  selling used Navneet books. By accessing or using BookShareApp, you agree to be bound by these Terms.
                 </p>
                 <p>If you do not agree to these Terms, please do not use our platform.</p>
               </CardContent>
@@ -45,7 +45,7 @@ export default function TermsPage() {
               </CardHeader>
               <CardContent className="text-gray-300 space-y-4">
                 <p>
-                  NavneetHub is an online platform that connects students who want to buy and sell used Navneet
+                  BookShareApp is an online platform that connects students who want to buy and sell used Navneet
                   educational books. We provide a marketplace where users can:
                 </p>
                 <ul className="list-disc list-inside space-y-1 text-sm">
@@ -56,7 +56,7 @@ export default function TermsPage() {
                 </ul>
                 <div className="bg-blue-500/10 border border-blue-500/30 rounded-lg p-4">
                   <p className="text-blue-200 text-sm">
-                    <strong>Important:</strong> NavneetHub is a platform service only. We do not handle payments,
+                    <strong>Important:</strong> BookShareApp is a platform service only. We do not handle payments,
                     shipping, or guarantee the quality of books or reliability of users.
                   </p>
                 </div>
@@ -112,7 +112,7 @@ export default function TermsPage() {
                 </CardTitle>
               </CardHeader>
               <CardContent className="text-gray-300 space-y-4">
-                <p>The following activities are strictly prohibited on NavneetHub:</p>
+                <p>The following activities are strictly prohibited on BookShareApp:</p>
                 <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
                   <div>
                     <h4 className="text-white font-medium mb-2">Content Violations</h4>
@@ -165,7 +165,7 @@ export default function TermsPage() {
                 <div>
                   <h4 className="text-white font-medium mb-2">User Acknowledgment</h4>
                   <p className="text-sm">
-                    By using NavneetHub, you acknowledge that all transactions are conducted directly between buyers and
+                    By using BookShareApp, you acknowledge that all transactions are conducted directly between buyers and
                     sellers. You assume full responsibility for your interactions, meetings, and transactions with other
                     users.
                   </p>
@@ -182,7 +182,7 @@ export default function TermsPage() {
                 <div>
                   <h4 className="text-white font-medium mb-2">Platform Content</h4>
                   <p className="text-sm">
-                    The NavneetHub platform, including its design, features, and functionality, is owned by us and
+                    The BookShareApp platform, including its design, features, and functionality, is owned by us and
                     protected by copyright and other intellectual property laws.
                   </p>
                 </div>
@@ -215,7 +215,7 @@ export default function TermsPage() {
                 <div>
                   <h4 className="text-white font-medium mb-2">Platform Disclaimer</h4>
                   <p className="text-sm">
-                    NavneetHub is provided "as is" without warranties of any kind. We do not guarantee the accuracy,
+                    BookShareApp is provided "as is" without warranties of any kind. We do not guarantee the accuracy,
                     completeness, or reliability of any content or the availability of the platform.
                   </p>
                 </div>
@@ -292,7 +292,7 @@ export default function TermsPage() {
                 <div>
                   <h4 className="text-white font-medium mb-2">Acceptance</h4>
                   <p className="text-sm">
-                    Continued use of NavneetHub after changes constitutes acceptance of the updated Terms. If you don't
+                    Continued use of BookShareApp after changes constitutes acceptance of the updated Terms. If you don't
                     agree to the changes, please stop using the platform.
                   </p>
                 </div>
@@ -311,7 +311,7 @@ export default function TermsPage() {
                     <strong className="text-white">Email:</strong> udaynandaniya5@gmail.com
                   </p>
                   <p>
-                    <strong className="text-white">Platform:</strong> NavneetHub.com
+                    <strong className="text-white">Platform:</strong> BookShareApp.com
                   </p>
                   <p>
                     <strong className="text-white">Response Time:</strong> Within 48 hours
@@ -326,7 +326,7 @@ export default function TermsPage() {
                 <h4 className="text-purple-200 font-medium mb-2">Governing Law</h4>
                 <p className="text-purple-200 text-sm">
                   These Terms are governed by the laws of India. Any disputes arising from these Terms or your use of
-                  NavneetHub will be subject to the jurisdiction of Indian courts.
+                  BookShareApp will be subject to the jurisdiction of Indian courts.
                 </p>
               </CardContent>
             </Card>

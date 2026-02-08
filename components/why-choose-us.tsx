@@ -41,15 +41,13 @@ export default function WhyChooseUs() {
       }`}
     >
       <div className="max-w-7xl mx-auto text-center">
-       {/* <h2 className="text-4xl font-bold mb-16 text-white">
-  {t("whyChoose.title") || "Why Choose NavneetHub?"}
-</h2> */}
+    
 <h2
   className={`text-4xl font-bold mb-16 ${
     isDark ? "text-white" : "text-gray-900"
   }`}
 >
-  {t("whyChoose.title") || "Why Choose NavneetHub?"}
+  {t("whyChoose.title") || "Why Choose BookShareApp?"}
 </h2>
 
 

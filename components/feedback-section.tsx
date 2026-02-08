@@ -57,7 +57,7 @@ export function FeedbackSection() {
   const cards = [
     {
       title: t("feedback.askTitle") || "Ask Query",
-      description: t("feedback.askDesc") || "Have questions about NavneetHub? Need help with something?",
+      description: t("feedback.askDesc") || "Have questions about BookShareApp? Need help with something?",
       icon: MessageCircle,
       type: "query",
       cta: t("feedback.askCta") || "Contact Support →",
@@ -66,7 +66,7 @@ export function FeedbackSection() {
     },
     {
       title: t("feedback.ideaTitle") || "Share New Ideas",
-      description: t("feedback.ideaDesc") || "Have an idea to make NavneetHub better?",
+      description: t("feedback.ideaDesc") || "Have an idea to make BookShareApp better?",
       icon: Lightbulb,
       type: "feature",
       cta: t("feedback.ideaCta") || "Submit Ideas →",
@@ -84,7 +84,7 @@ export function FeedbackSection() {
     },
     {
       title: t("feedback.feedbackTitle") || "Give Feedback",
-      description: t("feedback.feedbackDesc") || "Tell us what you love or want improved on NavneetHub.",
+      description: t("feedback.feedbackDesc") || "Tell us what you love or want improved on BookShareApp.",
       icon: MessageCircle,
       type: "feedback",
       cta: t("feedback.feedbackCta") || "Send Feedback →",

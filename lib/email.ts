@@ -1,5 +1,5 @@
 
-//C:\Users\UDAYN\Downloads\navneethub\lib\email.ts
+//C:\Users\UDAYN\Downloads\BookShareApp\lib\email.ts
 import nodemailer from "nodemailer";
 
 const transporter = nodemailer.createTransport({
@@ -10,13 +10,13 @@ const transporter = nodemailer.createTransport({
   },
 });
 
-const FROM = `"NavneetHub" <${process.env.EMAIL_USER}>`;
+const FROM = `"BookShareApp" <${process.env.EMAIL_USER}>`;
 
 export async function sendOTPEmail(email: string, otp: string, name: string) {
   await transporter.sendMail({
     from: FROM,
     to: email,
-    subject: "NavneetHub – Your OTP Code",
+    subject: "BookShareApp – Your OTP Code",
     text: `Hello ${name}, your OTP is ${otp}. It expires in 10 minutes.`,
     html: `
       <div style="font-family: sans-serif; max-width:600px;">
@@ -28,7 +28,7 @@ export async function sendOTPEmail(email: string, otp: string, name: string) {
         <p>Expires in 10 minutes.</p>
         <hr/>
         <footer style="font-size:12px;color:#888;">
-          © ${new Date().getFullYear()} NavneetHub
+          © ${new Date().getFullYear()} BookShareApp
         </footer>
       </div>
     `,
@@ -39,12 +39,12 @@ export async function sendDeletionNotificationEmail(email: string, name: string,
   await transporter.sendMail({
     from: FROM,
     to: email,
-    subject: "NavneetHub – Book Post Removed",
+    subject: "BookShareApp – Book Post Removed",
     text: `Hello ${name}, your book post "${bookTitle}" has been removed. Reason: ${reason}`,
     html: `
       <div style="font-family: Arial, sans-serif; max-width: 600px; margin: 0 auto; background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); color: white; border-radius: 10px; overflow: hidden;">
         <div style="background: rgba(255,255,255,0.1); padding: 20px; text-align: center;">
-          <h1 style="margin: 0; font-size: 24px;">📚 NavneetHub</h1>
+          <h1 style="margin: 0; font-size: 24px;">📚 BookShareApp</h1>
         </div>
         
         <div style="padding: 30px;">
@@ -53,7 +53,7 @@ export async function sendDeletionNotificationEmail(email: string, name: string,
           <p style="font-size: 16px; line-height: 1.6;">Hello <strong>${name}</strong>,</p>
           
           <p style="font-size: 16px; line-height: 1.6;">
-            We're writing to inform you that your book post has been removed from NavneetHub.
+            We're writing to inform you that your book post has been removed from BookShareApp.
           </p>
           
           <div style="background: rgba(255,255,255,0.1); padding: 20px; border-radius: 8px; margin: 20px 0;">
@@ -71,15 +71,15 @@ export async function sendDeletionNotificationEmail(email: string, name: string,
           </p>
           
           <div style="text-align: center; margin: 30px 0;">
-            <a href="${process.env.NEXT_PUBLIC_APP_URL || "https://navneethub.com"}" 
+            <a href="${process.env.NEXT_PUBLIC_APP_URL || "https://BookShareApp.com"}" 
                style="background: #4caf50; color: white; padding: 12px 30px; text-decoration: none; border-radius: 25px; font-weight: bold; display: inline-block;">
-              Visit NavneetHub
+              Visit BookShareApp
             </a>
           </div>
         </div>
         
         <div style="background: rgba(0,0,0,0.2); padding: 20px; text-align: center; font-size: 12px; color: #e1bee7;">
-          <p style="margin: 0;">© ${new Date().getFullYear()} NavneetHub - Connecting Students Through Books</p>
+          <p style="margin: 0;">© ${new Date().getFullYear()} BookShareApp - Connecting Students Through Books</p>
           <p style="margin: 5px 0 0 0;">This is an automated message, please do not reply to this email.</p>
         </div>
       </div>

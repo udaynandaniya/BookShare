@@ -114,7 +114,7 @@ export function Footer() {
                   : "bg-gradient-to-br from-purple-500 to-blue-500"}`}>
                   <BookOpen className="h-6 w-6 text-white" />
                 </div>
-                <h2 className="text-xl font-bold">NavneetHub</h2>
+                <h2 className="text-xl font-bold">BookShareApp</h2>
               </div>
 
               <p className={`text-sm leading-relaxed mb-4 ${theme === "dark" ? "text-slate-300" : "text-slate-600"}`}>
@@ -125,8 +125,8 @@ export function Footer() {
               <div className="space-y-3">
                 <div className="flex items-start gap-3 text-sm">
                   <Mail className="h-[18px] w-[18px] mt-[2px] shrink-0 text-purple-500" />
-                  <a href="mailto:navneethub@gmail.com" className="hover:underline">
-                    navneethub@gmail.com
+                  <a href="mailto:BookShareApp@gmail.com" className="hover:underline">
+                    BookShareApp@gmail.com
                   </a>
                 </div>
               </div>
@@ -197,7 +197,7 @@ export function Footer() {
             <div className="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
 
               <div className="flex items-center gap-2 text-sm">
-                <span>© {new Date().getFullYear()} NavneetHub. Made with</span>
+                <span>© {new Date().getFullYear()} BookShareApp. Made with</span>
                 <Heart className="h-4 w-4 text-red-500" />
                 <span>for students</span>
               </div>
