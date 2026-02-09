@@ -6,20 +6,33 @@ import { User } from "@/models/User"
 import jwt from "jsonwebtoken"
 import bcryptjs from "bcryptjs"
 
-connectDB()
 
 export async function POST(request: NextRequest) {
   try {
 
+      await connectDB() 
+
     const reqBody = await request.json()
-    const { email, otp } = reqBody
+   const { email, otp } = reqBody
+const numericOtp = Number(otp)
+
+if (isNaN(numericOtp)) {
+  return NextResponse.json({ error: "Invalid OTP format" }, { status: 400 })
+}
+
+
 
     // Find the user by email and verify OTP and expiry
     const user = await User.findOne({
-      email,
-      emailOtp: otp,
-      emailOtpExpiry: { $gt: new Date() },
-    })
+  email,
+  emailOtp: numericOtp,
+  emailOtpExpiry: { $gt: new Date() },
+})
+// const user = await User.findOne({
+//       email,
+//       emailOtp: otp,
+//       emailOtpExpiry: { $gt: new Date() },
+//     })
 
     if (!user) {
       return NextResponse.json({ error: "Invalid OTP or OTP expired" }, { status: 400 })
@@ -51,8 +64,12 @@ export async function POST(request: NextRequest) {
 
     response.cookies.set("auth-token", token, {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
+      // secure: process.env.NODE_ENV === "production",
+      // sameSite: "lax",
+
+      sameSite: "none",
+secure: true,
+
       path: "/",
       maxAge: 60 * 24 * 60 * 60, // 60 days in seconds
     })

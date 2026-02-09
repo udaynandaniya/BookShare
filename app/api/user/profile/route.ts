@@ -58,8 +58,12 @@ if (!user) {
 
     response.cookies.set("auth-token", "", {
       httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
+      // secure: process.env.NODE_ENV === "production",
+      // sameSite: "lax",
+
+      sameSite: "none",
+secure: true,
+
       maxAge: 0,
       path: "/",
     })

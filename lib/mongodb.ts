@@ -46,9 +46,7 @@ if (!MONGODB_URI) {
   throw new Error("MONGODB_URI is missing in environment variables")
 }
 
-/**
- * This prevents multiple connections in Vercel serverless
- */
+
 
 let cached = (global as any)._mongoose
 
@@ -67,7 +65,7 @@ export async function connectDB() {
   if (!cached.promise) {
     cached.promise = mongoose.connect(MONGODB_URI, {
       bufferCommands: false,
-      dbName: "bookshare",
+      dbName: "BookShareApp",
     })
   }
 
