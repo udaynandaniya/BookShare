@@ -53,13 +53,23 @@ export async function POST(request: NextRequest) {
       { status: 200 }
     )
 
+    // response.cookies.set("auth-token", token, {
+    //   httpOnly: true,
+    //   secure: process.env.NODE_ENV === "production",
+    //   sameSite: "lax",
+    //   path: "/",
+    //   maxAge: 60 * 24 * 60 * 60,
+    // })
+
+
     response.cookies.set("auth-token", token, {
-      httpOnly: true,
-      secure: process.env.NODE_ENV === "production",
-      sameSite: "lax",
-      path: "/",
-      maxAge: 60 * 24 * 60 * 60,
-    })
+  httpOnly: true,
+  secure: true,
+  sameSite: "none",
+  path: "/",
+  maxAge: 60 * 60 * 24 * 60,
+})
+
 
     return response
   } catch (error) {

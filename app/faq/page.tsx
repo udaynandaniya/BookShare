@@ -14,19 +14,19 @@ export default function FAQPage() {
       color: "bg-blue-100 text-blue-800",
       faqs: [
         {
-          question: "How do I create an account on NavneetHub?",
+          question: "How do I create an account on BookShareApp?",
           answer:
             "Click on 'Sign Up' in the top right corner, enter your email and phone number, verify with OTP, and complete your profile. It's that simple!",
         },
         {
-          question: "Is NavneetHub free to use?",
+          question: "Is BookShareApp free to use?",
           answer:
             "Yes! Creating an account and browsing books is completely free. We only charge a small commission when you successfully sell a book.",
         },
         {
           question: "What types of books can I sell?",
           answer:
-            "You can sell any Navneet books including textbooks, workbooks, and reference materials for all standards (1st to 12th).",
+            "You can sell any BookShareApp books including textbooks, workbooks, and reference materials for all standards (1st to 12th).",
         },
       ],
     },
@@ -89,7 +89,7 @@ export default function FAQPage() {
       color: "bg-red-100 text-red-800",
       faqs: [
         {
-          question: "Is it safe to buy/sell on NavneetHub?",
+          question: "Is it safe to buy/sell on BookShareApp?",
           answer:
             "We verify all users with OTP and encourage meeting in public places. Always inspect books before payment and trust your instincts.",
         },
@@ -145,7 +145,7 @@ export default function FAQPage() {
           </div>
           <h1 className="text-4xl font-bold text-white mb-4">Frequently Asked Questions</h1>
           <p className="text-gray-300 text-lg max-w-2xl mx-auto">
-            Find answers to common questions about NavneetHub. Can't find what you're looking for? Contact our support
+            Find answers to common questions about BookShareApp. Can't find what you're looking for? Contact our support
             team.
           </p>
         </div>

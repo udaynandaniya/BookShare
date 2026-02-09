@@ -171,7 +171,7 @@ export default function EditProfilePage() {
           bookCount > 0
             ? `<div class="bg-yellow-900/30 p-3 rounded border border-yellow-500/30">
             <p class="text-yellow-200 text-sm">
-              📚 You currently have <strong>${bookCount} book listing${bookCount > 1 ? "s" : ""}</strong> that will be permanently removed from NavneetHub.
+              📚 You currently have <strong>${bookCount} book listing${bookCount > 1 ? "s" : ""}</strong> that will be permanently removed from BookShareApp.
             </p>
           </div>`
             : ""
@@ -230,7 +230,7 @@ export default function EditProfilePage() {
                     ? `<p class="text-blue-200">📚 ${bookCount} book listing${bookCount > 1 ? "s have" : " has"} been removed</p>`
                     : ""
                 }
-                <p class="text-gray-300 text-sm">Thank you for using NavneetHub!</p>
+                <p class="text-gray-300 text-sm">Thank you for using BookShareApp!</p>
               </div>
             `,
               icon: "success",

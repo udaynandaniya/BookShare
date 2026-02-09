@@ -14,7 +14,7 @@ export default function DashboardRedirector() {
   useEffect(() => {
     if (user === null) {
       router.push("/login")
-    } else if (user.isAdmin) {
+    } else if (user?.isAdmin) {
       router.push("/dashboard/admin")
     } else {
       router.push("/dashboard/user")

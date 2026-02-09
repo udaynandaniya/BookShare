@@ -29,7 +29,7 @@ export default function HelpPage() {
                 <CardContent className="p-6 text-center">
                   <BookOpen className="h-12 w-12 text-purple-400 mx-auto mb-4" />
                   <h3 className="text-white font-semibold mb-2">Getting Started</h3>
-                  <p className="text-gray-300 text-sm mb-4">Learn how to use NavneetHub</p>
+                  <p className="text-gray-300 text-sm mb-4">Learn how to use BookShareApp</p>
                   <Button asChild variant="outline" size="sm" className="border-white/20 text-white hover:bg-white/10">
                     <Link href="#getting-started">Learn More</Link>
                   </Button>
@@ -64,7 +64,7 @@ export default function HelpPage() {
               <CardHeader>
                 <CardTitle className="text-white flex items-center gap-2">
                   <BookOpen className="h-5 w-5 text-purple-400" />
-                  Getting Started with NavneetHub
+                  Getting Started with BookShareApp
                 </CardTitle>
                 <CardDescription className="text-gray-300">Step-by-step guide to using our platform</CardDescription>
               </CardHeader>

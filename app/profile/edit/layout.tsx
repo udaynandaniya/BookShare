@@ -4,7 +4,7 @@ import type React from "react"
 import type { Metadata, Viewport } from "next"
 
 export const metadata: Metadata = {
-  title: "Edit Profile - NavneetHub",
+  title: "Edit Profile - BookShareApp",
   description: "Update your account information",
 }
 

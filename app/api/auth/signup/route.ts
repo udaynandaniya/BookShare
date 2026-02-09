@@ -7,12 +7,22 @@ import { sendOTPEmail } from "@/lib/email"
 
 export async function POST(req: NextRequest) {
   await connectDB()
-  const { fullName, mobile, email, password } = await req.json()
+  let { fullName, mobile, email, password } = await req.json()
+
+email = email.trim().toLowerCase()
+fullName = fullName.trim()
+mobile = mobile.trim()
+
 
   if (!fullName || !mobile || !email || !password)
     return NextResponse.json({ message: "All fields are required" }, { status: 400 })
 
-  if (!email.endsWith("@gmail.com")) return NextResponse.json({ message: "Email must be Gmail" }, { status: 400 })
+  if (!email.toLowerCase().endsWith("@gmail.com")) {
+  return NextResponse.json(
+    { message: "Email must be a valid Gmail address" },
+    { status: 400 }
+  )
+}
 
   if (!/^[6-9]\d{9}$/.test(mobile)) return NextResponse.json({ message: "Invalid mobile number" }, { status: 400 })
 
