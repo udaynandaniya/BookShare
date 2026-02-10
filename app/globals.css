@@ -1,4 +1,4 @@
-@tailwind base;
+/* @tailwind base;
 @tailwind components;
 @tailwind utilities;
 
@@ -74,7 +74,6 @@
   }
 }
 
-/* Fix select dropdown positioning */
 [data-radix-popper-content-wrapper] {
   z-index: 50 !important;
 }
@@ -85,7 +84,6 @@
   overflow-y: auto !important;
 }
 
-/* Fix modal positioning */
 [data-radix-dialog-overlay] {
   position: fixed !important;
   inset: 0 !important;
@@ -102,13 +100,11 @@
   z-index: 51 !important;
 }
 
-/* Fix tabs layout */
 [data-radix-tabs-content] {
   width: 100%;
   overflow: hidden;
 }
 
-/* Prevent zoom on input focus on iOS */
 @media screen and (-webkit-min-device-pixel-ratio: 0) {
   select,
   textarea,
@@ -335,4 +331,201 @@
 
 .before\:animate-border-glow::before {
   animation: border-glow 4s linear infinite;
+} */
+
+
+
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ---------------- FONT & RENDER ---------------- */
+
+:root {
+  --font-sans: var(--font-inter), system-ui, -apple-system, Segoe UI, Roboto, Helvetica, Arial, sans-serif;
+}
+
+html {
+  scroll-behavior: smooth;
+  -webkit-tap-highlight-color: transparent;
+}
+
+body {
+  font-family: var(--font-sans);
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
+}
+
+/* ---------------- THEME VARIABLES (your original kept) ---------------- */
+
+@layer base {
+  :root {
+    --background: 0 0% 100%;
+    --foreground: 222.2 84% 4.9%;
+    --card: 0 0% 100%;
+    --card-foreground: 222.2 84% 4.9%;
+    --popover: 0 0% 100%;
+    --popover-foreground: 222.2 84% 4.9%;
+    --primary: 262 83% 58%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 240 5% 96%;
+    --secondary-foreground: 222.2 47.4% 11.2%;
+    --muted: 240 5% 96%;
+    --muted-foreground: 215 16% 46%;
+    --accent: 240 5% 96%;
+    --accent-foreground: 222.2 47.4% 11.2%;
+    --destructive: 0 72% 51%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 240 6% 90%;
+    --input: 240 6% 90%;
+    --ring: 262 83% 58%;
+    --radius: 0.5rem;
+  }
+
+  .dark {
+    --background: 222 47% 7%;
+    --foreground: 210 40% 98%;
+    --card: 222 47% 9%;
+    --card-foreground: 210 40% 98%;
+    --popover: 222 47% 9%;
+    --popover-foreground: 210 40% 98%;
+    --primary: 263 70% 60%;
+    --primary-foreground: 210 40% 98%;
+    --secondary: 217 32% 17%;
+    --secondary-foreground: 210 40% 98%;
+    --muted: 217 32% 17%;
+    --muted-foreground: 215 20% 65%;
+    --accent: 217 32% 17%;
+    --accent-foreground: 210 40% 98%;
+    --destructive: 0 63% 31%;
+    --destructive-foreground: 210 40% 98%;
+    --border: 217 32% 17%;
+    --input: 217 32% 17%;
+    --ring: 263 70% 60%;
+  }
+
+  * {
+    @apply border-border;
+    box-sizing: border-box;
+  }
+
+  body {
+    @apply bg-background text-foreground;
+    overflow-x: clip;
+    min-height: 100vh;
+  }
+}
+
+/* ---------------- MOBILE INPUT ZOOM FIX ---------------- */
+
+@media screen and (-webkit-min-device-pixel-ratio: 0) {
+  input,
+  textarea,
+  select {
+    font-size: 16px !important;
+  }
+}
+
+/* ---------------- RADIX UI FIXES ---------------- */
+
+[data-radix-popper-content-wrapper],
+[data-radix-select-content] {
+  z-index: 50 !important;
+  max-height: 300px !important;
+  overflow-y: auto !important;
+}
+
+[data-radix-dialog-overlay] {
+  position: fixed !important;
+  inset: 0 !important;
+  z-index: 50 !important;
+}
+
+[data-radix-dialog-content] {
+  position: fixed !important;
+  left: 50% !important;
+  top: 50% !important;
+  transform: translate(-50%, -50%) !important;
+  max-width: 92vw !important;
+  max-height: 92vh !important;
+  z-index: 51 !important;
+}
+
+/* ---------------- LIGHTWEIGHT ANIMATIONS ---------------- */
+
+@keyframes pulse {
+  50% { opacity: 0.6; }
+}
+
+.animate-pulse {
+  animation: pulse 3.2s ease-in-out infinite;
+}
+
+/* ---------------- CARD HOVER (performance friendly) ---------------- */
+
+.card-hover {
+  transition: transform .18s ease, box-shadow .18s ease;
+}
+
+.card-hover:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 8px 16px rgba(0,0,0,0.18);
+}
+
+/* ---------------- BUTTON SHIMMER ---------------- */
+
+.btn-animate {
+  position: relative;
+  overflow: hidden;
+}
+
+.btn-animate::before {
+  content: "";
+  position: absolute;
+  inset: 0;
+  left: -100%;
+  background: linear-gradient(90deg, transparent, rgba(255,255,255,.2), transparent);
+  transition: left .25s ease-out;
+}
+
+.btn-animate:hover::before {
+  left: 100%;
+}
+
+/* ---------------- GLASS EFFECT (optimized) ---------------- */
+
+.glass {
+  background: rgba(255,255,255,0.06);
+  backdrop-filter: blur(4px);
+  border: 1px solid rgba(255,255,255,0.12);
+}
+
+/* ---------------- SCROLLBAR ---------------- */
+
+::-webkit-scrollbar {
+  width: 6px;
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(255,255,255,.2);
+  border-radius: 10px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(255,255,255,.35);
+}
+
+/* ---------------- RESPONSIVE TYPOGRAPHY ---------------- */
+
+h1 { @apply text-3xl md:text-4xl lg:text-5xl font-bold tracking-tight; }
+h2 { @apply text-2xl md:text-3xl font-semibold; }
+h3 { @apply text-xl md:text-2xl font-semibold; }
+p  { @apply text-sm md:text-base leading-relaxed; }
+
+/* ---------------- TOUCH IMPROVEMENT ---------------- */
+
+button, a {
+  touch-action: manipulation;
 }
